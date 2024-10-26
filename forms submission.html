@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Form Submission</title>
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+        }
+        .checkmark {
+            font-size: 100px;
+            color: #00ff99;
+        }
+        .success-message {
+            font-size: 24px;
+            color: #00ff99;
+            margin: 20px 0;
+        }
+        .details {
+            font-size: 16px;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+        }
+        .go-back {
+            font-size: 16px;
+            color: #ffffff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+        .footer a {
+            color: #b0b0b0;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.location.href = "https://skylers.netlify.app/"; // Replace with the URL of the submit page
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="checkmark">&#10003;</div>
+        <div class="success-message">Form submitted successfully!</div>
+        <div class="details">Thank you! The form has been submitted successfully.<br>We will reply to you soon!</div>
+        <div class="go-back" onclick="goBack()">Go back</div>
+    </div>
+    <div class="footer">
+        Want to create your own contact form? Contact me <a href="https://ryanbradley-portfolio.netlify.app/">Ryan Bradley</a>
+    </div>
+</body>
+</html>
